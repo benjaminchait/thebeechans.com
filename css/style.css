@@ -1,10 +1,91 @@
+html { 
+  background: url(/img/bench.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
-  background: #121311;
+	background-color: transparent !important
+}
+.cred {
+	background: rgba(0,0,0,.4);
+	color: #ccc;
+	padding-left: .25rem;
+	padding-right: .25rem;
+	font-size: .75rem;
+	white-space: nowrap;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+.cred:hover {
+	background: rgba(255,255,255,.4);
+	color: #333;
+	text-decoration: none;
+}
+.message {
+	text-align: center;
+	margin-top: 15vh;
+}
+.message p {
+	font-family: 'Playfair Display', sans-serif;
+	color: #1a1c1b;
+	font-style: italic;
+}
+.message a, .message a:visited {
+	color: #4a6243;
+	border-bottom: 1px dotted #4a6243;
+}
+.message a:hover {
+	color: #7b1b0e;
+	text-decoration: none;
+	border-bottom: 1px dotted #7b1b0e;;
 }
 
-.ma_banner {
-  height: 100px;
-  position: absolute;
-  top: 0;
-  right: 5%;
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+ 
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+ 
+ 
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+	.message p {
+		font-size: 2rem
+	}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.message p {
+		font-size: 2rem
+	}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.message p {
+		font-size: 1.75rem
+	}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .message p {
+		font-size: 1.75rem
+	}
 }
