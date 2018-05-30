@@ -1,0 +1,10 @@
+body {
+  background: #121311;
+}
+
+.ma_banner {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
